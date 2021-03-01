@@ -1,7 +1,9 @@
-@import 'reset';
-
-$main: #85e;
+@import 'reset/reset';
 
 body {
-    background-color: $main;
+    background-color: $clr-d-bg;
+}
+
+p {
+    font-size: 1rem;
 }
