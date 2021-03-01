@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "predeploy": "rm -rf dist && parcel build src/index.html --public-url https://lucasfber.github.io/test/",
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url https://lucasfber.github.io/boilerplate-frontend/",
     "deploy": "npm run predeploy && gh-pages -d dist"
   },
-  "homepage": "https://lucasfber.github.io/test",
+  "homepage": "https://lucasfber.github.io/boilerplate-frontend",
   "keywords": [],
   "author": "",
   "license": "ISC",
