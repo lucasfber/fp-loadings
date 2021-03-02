@@ -1,9 +1,67 @@
-@import 'reset/reset';
+@import "reset/reset";
 
 body {
-    background-color: $clr-d-bg;
+  background-color: $clr-d-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 p {
-    font-size: 1rem;
+  font-size: 1rem;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  border-top-color: #2ecc71;
+  animation: spin 750ms infinite ease-in-out;
+  margin: 0 auto;
+}
+
+.loading-dots {
+  margin-top: 2.4rem;
+}
+
+.dots {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  margin: 0 1rem;
+  animation: bounce 1.5s infinite ease-in-out both;
+}
+
+.bounce {
+  animation-delay: -0.3s;
+}
+
+.bounce-2 {
+  animation-delay: -0.15s;
+}
+
+.bounce-3 {
+  animation-delay: -0.1s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
 }
